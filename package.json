@@ -1,0 +1,38 @@
+{
+  "name": "gilp-util",
+  "version": "0.0.1",
+  "description": "Utils for gilp.",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "semistandard *.js",
+    "pretest": "npm run lint",
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec $(find ./test -name *.tests.js) && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sophilabs/gilp-util.git"
+  },
+  "keywords": [
+    "gulp",
+    "git",
+    "hooks"
+  ],
+  "author": "Sophilabs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sophilabs/gilp-util/issues"
+  },
+  "engines": {
+    "node": ">= 4.0"
+  },
+  "homepage": "https://github.com/sophilabs/gilp-util#readme",
+  "dependencies": {
+    "yargs": "^4.7.1"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3",
+    "semistandard": "^8.0.0"
+  }
+}
