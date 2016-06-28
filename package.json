@@ -1,6 +1,6 @@
 {
   "name": "gilp-util",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Utils for gilp.",
   "main": "lib/index.js",
   "scripts": {

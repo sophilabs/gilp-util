@@ -19,19 +19,35 @@ npm install gilp-util
 
 ## Usage
 
-### Read git hook's parameters
+### getArgs()
+
+Read git hook's parameters.
 
 ```javascript
   var gilpUtil = require('gilp-util');
   gilpUtil.getArgs();
 ```
 
-### Get current branch
+### getBranch()
+
+Get current branch
 
 ```javascript
   var gilpUtil = require('gilp-util');
   gilpUtil.getBranch();
 ```
+
+### getGitDirectory()
+
+Return full path to git directory.
+
+### getBaseDirectory()
+
+Return full path to base directory.
+
+### isInMerge()
+
+Return `true` if a merge is in progress.
 
 ## License
 
