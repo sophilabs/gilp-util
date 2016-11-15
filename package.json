@@ -1,16 +1,16 @@
 {
   "name": "gilp-util",
-  "version": "0.0.6",
   "description": "Utils for gilp.",
   "main": "lib/index.js",
   "scripts": {
     "lint": "semistandard *.js",
-    "pretest": "npm run lint",
-    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec $(find ./test -name *.tests.js) && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    "pretest": "yarn run lint",
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec $(find ./test -name *.tests.js) && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sophilabs/gilp-util.git"
+    "url": "https://github.com/sophilabs/gilp-util.git"
   },
   "keywords": [
     "gulp",
@@ -33,6 +33,8 @@
     "coveralls": "^2.11.9",
     "istanbul": "^0.4.4",
     "mocha": "^2.5.3",
+    "semantic-release": "^4.3.5",
+    "semantic-release-cli": "^1.4.1",
     "semistandard": "^8.0.0"
   }
 }
