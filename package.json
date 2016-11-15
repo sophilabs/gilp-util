@@ -6,7 +6,6 @@
     "lint": "semistandard *.js",
     "pretest": "yarn run lint",
     "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec $(find ./test -name *.tests.js) && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
@@ -33,8 +32,6 @@
     "coveralls": "2.11.9",
     "istanbul": "0.4.4",
     "mocha": "3.1.2",
-    "semantic-release": "4.3.5",
-    "semantic-release-cli": "1.4.1",
     "semistandard": "9.1.0"
   }
 }
