@@ -6,8 +6,8 @@ node_js:
   - '4'
 before_install:
   - npm install -g yarn
-before_script:
-  - yarn prune
+install:
+  - yarn
 after_script:
   - yarn run coveralls
 after_success:
