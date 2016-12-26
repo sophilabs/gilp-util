@@ -34,7 +34,7 @@ Get current branch
 
 ```javascript
   var gilpUtil = require('gilp-util');
-  gilpUtil.getBranch();
+  gilpUtil.getBranchName();
 ```
 
 ### getGitDirectory()
@@ -48,6 +48,10 @@ Return full path to base directory.
 ### isInMerge()
 
 Return `true` if a merge is in progress.
+
+## getCommitMessage()
+
+Return commit message.
 
 ## License
 
