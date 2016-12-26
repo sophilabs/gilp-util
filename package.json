@@ -1,6 +1,7 @@
 {
   "name": "gilp-util",
   "description": "Utils for gilp.",
+  "version": "0.0.7",
   "main": "lib/index.js",
   "scripts": {
     "lint": "semistandard *.js",
