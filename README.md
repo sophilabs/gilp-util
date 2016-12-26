@@ -28,7 +28,7 @@ Read git hook's parameters.
   gilpUtil.getArgs();
 ```
 
-### getBranch()
+### getBranchName()
 
 Get current branch
 
