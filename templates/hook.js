@@ -8,15 +8,20 @@ var env = process.env;
 env.PATH = execSync('npm bin').toString().trim() + ':' + env.PATH;
 
 var gulp = spawn(
-  'gulp',
+  /^win/.test(process.platform) ? 'gulp.cmd' : 'gulp',
   ['gilp-%s'].concat(process.argv.slice(2).map(function (arg) { return util.format('--gilp-args=%%s', arg); })),
   {
     stdio: 'inherit',
-    cwd: process.env.PWD || process.cwd(),
+    cwd: execSync('git rev-parse --show-toplevel').toString().trim(),
     env: env
   }
 );
 
 gulp.on('close', function (code) {
   process.exit(code);
+});
+
+process.on('uncaughtException', function (err) {
+  console.error(err.stack);
+  gulp.kill('SIGHUP');
 });
