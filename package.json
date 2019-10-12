@@ -7,7 +7,7 @@
     "lint": "semistandard *.js ",
     "pretest": "npm run lint --scripts-prepend-node-path",
     "test": "jest",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
