@@ -30,7 +30,7 @@ yarn add gilp-util
 Read git hook's parameters.
 
 ```javascript
-  var gilpUtil = require('gilp-util');
+  const gilpUtil = require('gilp-util');
   gilpUtil.getArgs();
 ```
 
@@ -39,7 +39,7 @@ Read git hook's parameters.
 Get current branch
 
 ```javascript
-  var gilpUtil = require('gilp-util');
+  const gilpUtil = require('gilp-util');
   gilpUtil.getBranchName();
 ```
 
