@@ -31,11 +31,13 @@
     "yargs": "16.0.3"
   },
   "devDependencies": {
-    "coveralls": "3.0.7",
-    "jest": "^24.9.0",
+    "coveralls": "3.1.0",
+    "jest": "^26.5.3",
     "semistandard": "*"
   },
   "semistandard": {
-    "env": [ "jest" ]
+    "env": [
+      "jest"
+    ]
   }
 }
