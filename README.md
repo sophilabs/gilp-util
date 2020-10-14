@@ -17,6 +17,12 @@ Utils for gilp.
 npm install gilp-util
 ```
 
+or
+
+```bash
+yarn add gilp-util
+```
+
 ## Usage
 
 ### getArgs()
@@ -55,7 +61,7 @@ Return commit message.
 
 ## License
 
-Gilp Util is Copyright (c) 2016 sophilabs, inc. It is free software, and may be
+Gilp Util is Copyright (c) 2020 sophilabs, inc. It is free software, and may be
 redistributed under the terms specified in the [license] file.
 
 ## About

@@ -4,7 +4,7 @@
   "version": "0.0.8",
   "main": "lib/index.js",
   "scripts": {
-    "lint": "semistandard *.js ",
+    "lint": "semistandard",
     "pretest": "npm run lint --scripts-prepend-node-path",
     "test": "jest",
     "coverage": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
@@ -24,15 +24,18 @@
     "url": "https://github.com/sophilabs/gilp-util/issues"
   },
   "engines": {
-    "node": ">= 4.0"
+    "node": ">= 6.0"
   },
   "homepage": "https://github.com/sophilabs/gilp-util#readme",
   "dependencies": {
-    "yargs": "14.2.0"
+    "yargs": "16.0.3"
   },
   "devDependencies": {
     "coveralls": "3.0.7",
     "jest": "^24.9.0",
-    "semistandard": "9.1.0"
+    "semistandard": "*"
+  },
+  "semistandard": {
+    "env": [ "jest" ]
   }
 }

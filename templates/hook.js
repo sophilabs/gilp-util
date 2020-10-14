@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 var execSync = require('child_process').execSync;
 var spawn = require('child_process').spawn;
-var path = require('path');
 var util = require('util');
 var env = process.env;
 
